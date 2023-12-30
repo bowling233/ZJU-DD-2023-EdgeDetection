@@ -1,0 +1,470 @@
+
+*** Running vivado
+    with args -log dvi2rgb_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dvi2rgb_0.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source dvi2rgb_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bowling233/Code/_repo/sword/DigitalImageProcessing/lab_source/FPGA-Imaging-Library-Publish'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bowling233/Code/_repo/sword/DigitalImageProcessing/lab_source/repo/vivado-library/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: dvi2rgb_0
+Command: synth_design -top dvi2rgb_0 -part xc7k160tffg676-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 439809
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2043.527 ; gain = 403.629 ; free physical = 268 ; free virtual = 76719
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:128]
+WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:161]
+WARNING: [Synth 8-9112] actual for formal port 'potherchrdy' is neither a static name nor a globally static expression [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:182]
+WARNING: [Synth 8-9112] actual for formal port 'potherchvld' is neither a static name nor a globally static expression [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb_0' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/synth/dvi2rgb_0.vhd:80]
+	Parameter kEmulateDDC bound to: 1 - type: bool 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+	Parameter kAddBUFG bound to: 1 - type: bool 
+	Parameter kEdidFileName bound to: 720p_edid.data - type: string 
+INFO: [Synth 8-3491] module 'dvi2rgb' declared at '/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/synth/dvi2rgb_0.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:118]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:132]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 12.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:173]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:232]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:85]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:92]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:102]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:130]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/ResyncToBUFG.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb_0' (0#1) [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/synth/dvi2rgb_0.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/PhaseAlign.vhd:209]
+WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2124.465 ; gain = 484.566 ; free physical = 273 ; free virtual = 76621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2139.309 ; gain = 499.410 ; free physical = 269 ; free virtual = 76617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2139.309 ; gain = 499.410 ; free physical = 269 ; free virtual = 76617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2145.246 ; gain = 0.000 ; free physical = 264 ; free virtual = 76612
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.gen/sources_1/ip/dvi2rgb_0/src/dvi2rgb.xdc] for cell 'U0'
+Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.059 ; gain = 0.000 ; free physical = 235 ; free virtual = 76605
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2291.094 ; gain = 0.000 ; free physical = 234 ; free virtual = 76604
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 255 ; free virtual = 76630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 255 ; free virtual = 76630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 255 ; free virtual = 76630
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
+INFO: [Synth 8-802] inferred FSM for state register 'sState_reg' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 resetst |                      00000000001 |                      00000000001
+                  idlest |                      00000000010 |                      00000000010
+                 tokenst |                      00000000100 |                      00000000100
+               eyeopenst |                      00000001000 |                      00000001000
+               jtrzonest |                      00000010000 |                      00000010000
+                dlydecst |                      00010000000 |                      00010000000
+          dlytstcenterst |                      00100000000 |                      00100000000
+               alignedst |                      01000000000 |                      01000000000
+                dlyincst |                      00000100000 |                      00000100000
+             dlytstovfst |                      00001000000 |                      00001000000
+            alignerrorst |                      10000000000 |                      10000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+               staddress |                              011 |                              001
+            stturnaround |                              111 |                              110
+                  stsack |                              101 |                              100
+                  stread |                              001 |                              010
+                  stmack |                              010 |                              101
+                 stwrite |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                             0001 |                               00
+                  stread |                             0010 |                               01
+            stregaddress |                             0100 |                               11
+                 stwrite |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sState_reg' using encoding 'one-hot' in module 'EEPROM_8b'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 252 ; free virtual = 76629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 13    
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 105   
++---RAMs : 
+	              320 Bit	(32 X 10 bit)          RAMs := 3     
++---Muxes : 
+	  12 Input   11 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 7     
+	   5 Input    8 Bit        Muxes := 3     
+	 129 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 15    
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 83    
+	  12 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 240 ; free virtual = 76621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                      | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+|U0          | DataDecoders[2].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
+|U0          | DataDecoders[1].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
+|U0          | DataDecoders[0].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 277 ; free virtual = 76633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 272 ; free virtual = 76628
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+|Module Name | RTL Object                                      | Inference | Size (Depth x Width) | Primitives  | 
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+|U0          | DataDecoders[2].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
+|U0          | DataDecoders[1].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
+|U0          | DataDecoders[0].DecoderX/ChannelBondX/pFIFO_reg | Implied   | 32 x 10              | RAM32M x 2  | 
++------------+-------------------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 272 ; free virtual = 76628
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFIO      |     1|
+|3     |BUFR       |     1|
+|4     |CARRY4     |    18|
+|5     |IDELAYCTRL |     1|
+|6     |IDELAYE2   |     3|
+|7     |ISERDESE2  |     6|
+|9     |LUT1       |    25|
+|10    |LUT2       |    57|
+|11    |LUT3       |    78|
+|12    |LUT4       |    73|
+|13    |LUT5       |   106|
+|14    |LUT6       |   144|
+|15    |MMCME2_ADV |     1|
+|16    |MUXF7      |    11|
+|17    |RAM32M     |     6|
+|18    |FDCE       |    10|
+|19    |FDPE       |    20|
+|20    |FDRE       |   448|
+|21    |FDSE       |    12|
+|22    |IBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2291.094 ; gain = 499.410 ; free physical = 270 ; free virtual = 76627
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2291.094 ; gain = 651.195 ; free physical = 270 ; free virtual = 76627
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.094 ; gain = 0.000 ; free physical = 501 ; free virtual = 76874
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2291.094 ; gain = 0.000 ; free physical = 544 ; free virtual = 76918
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+Synth Design complete | Checksum: 79eb2c16
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 2291.094 ; gain = 963.133 ; free physical = 543 ; free virtual = 76917
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1847.743; main = 1528.595; forked = 379.930
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3258.398; main = 2291.062; forked = 999.352
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2315.070 ; gain = 0.000 ; free physical = 543 ; free virtual = 76917
+INFO: [Common 17-1381] The checkpoint '/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dvi2rgb_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dvi2rgb_0, cache-ID = dc9deebd1d94ae26
+INFO: [Coretcl 2-1174] Renamed 40 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2315.070 ; gain = 0.000 ; free physical = 549 ; free virtual = 76925
+INFO: [Common 17-1381] The checkpoint '/home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dvi2rgb_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dvi2rgb_0_utilization_synth.rpt -pb dvi2rgb_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 30 21:28:27 2023...

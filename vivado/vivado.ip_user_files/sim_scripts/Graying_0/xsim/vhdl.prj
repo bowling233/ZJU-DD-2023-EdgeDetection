@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierBluex0d114/sim/MultiplierBluex0d114.vhd" \
+"../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierGreenx0d587/sim/MultiplierGreenx0d587.vhd" \
+"../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierRedx0d299/sim/MultiplierRedx0d299.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_11,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,
+xbip_pipe_v3_0_vh_rfs.vhd,vhdl,xbip_pipe_v3_0_7,../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd,
+xbip_bram18k_v3_0_vh_rfs.vhd,vhdl,xbip_bram18k_v3_0_7,../../../ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd,
+mult_gen_v12_0_vh_rfs.vhd,vhdl,mult_gen_v12_0_19,../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd,
+MultiplierBluex0d114.vhd,vhdl,xil_defaultlib,../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierBluex0d114/sim/MultiplierBluex0d114.vhd,
+MultiplierGreenx0d587.vhd,vhdl,xil_defaultlib,../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierGreenx0d587/sim/MultiplierGreenx0d587.vhd,
+MultiplierRedx0d299.vhd,vhdl,xil_defaultlib,../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/ip/MultiplierRedx0d299/sim/MultiplierRedx0d299.vhd,
+Graying.v,verilog,xil_defaultlib,../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/new/Graying.v,
+Graying_0.v,verilog,xil_defaultlib,../../../../vivado.gen/sources_1/ip/Graying_0/sim/Graying_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

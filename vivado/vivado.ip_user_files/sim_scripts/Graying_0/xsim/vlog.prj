@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../vivado.gen/sources_1/ip/Graying_0/sources_1/new/Graying.v" \
+"../../../../vivado.gen/sources_1/ip/Graying_0/sim/Graying_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

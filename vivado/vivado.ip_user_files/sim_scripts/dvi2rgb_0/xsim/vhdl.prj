@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../ipstatic/src/SyncBase.vhd" \
+"../../../ipstatic/src/EEPROM_8b.vhd" \
+"../../../ipstatic/src/TWI_SlaveCtl.vhd" \
+"../../../ipstatic/src/GlitchFilter.vhd" \
+"../../../ipstatic/src/SyncAsync.vhd" \
+"../../../ipstatic/src/DVI_Constants.vhd" \
+"../../../ipstatic/src/SyncAsyncReset.vhd" \
+"../../../ipstatic/src/PhaseAlign.vhd" \
+"../../../ipstatic/src/InputSERDES.vhd" \
+"../../../ipstatic/src/ChannelBond.vhd" \
+"../../../ipstatic/src/ResyncToBUFG.vhd" \
+"../../../ipstatic/src/TMDS_Decoder.vhd" \
+"../../../ipstatic/src/TMDS_Clocking.vhd" \
+"../../../ipstatic/src/dvi2rgb.vhd" \
+"../../../../vivado.gen/sources_1/ip/dvi2rgb_0/sim/dvi2rgb_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Dec 30 21:28:05 2023
+# Process ID: 439785
+# Current directory: /home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1
+# Command line: vivado -log dvi2rgb_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dvi2rgb_0.tcl
+# Log file: /home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/dvi2rgb_0.vds
+# Journal file: /home/bowling233/Code/_repo/FPGA_edge_detection/vivado/vivado.runs/dvi2rgb_0_synth_1/vivado.jou
+# Running On: bowling-AP201, OS: Linux, CPU Frequency: 3387.677 MHz, CPU Physical cores: 6, Host memory: 33415 MB
+#-----------------------------------------------------------
+source dvi2rgb_0.tcl -notrace
